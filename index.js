@@ -19,7 +19,8 @@ switch (opt) {
         break;
     case '2':
         let range = prompt("Insert the range to evaluate with the following structure (/[x, y]/):  ")
-        if(r.containsRange(range)){
+        const r2 = new Range(range)
+        if(r.containsRange(r2.start, r2.end)){
             console.log("The range does contains the given range")
         }else{
             console.log("The range does not contains given range")
@@ -30,7 +31,8 @@ switch (opt) {
         break;
     case '4':
         let equality = prompt("Insert the range to evaluate equality with the following structure (/[x, y]/):  ")
-        if(r.equals(equality)){
+        const r3 = new Range(equality)
+        if(r.equals(r3)){
             console.log("The range is equal to the given range")
         }else{
             console.log("The range is not equal to the given range")
