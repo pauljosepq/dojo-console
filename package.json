@@ -1,0 +1,24 @@
+{
+  "name": "dojo-console",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pauljosepq/dojo-console.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pauljosepq/dojo-console/issues"
+  },
+  "homepage": "https://github.com/pauljosepq/dojo-console#readme",
+  "dependencies": {
+    "prompt-sync": "^4.2.0",
+    "range-dojo": "^1.0.0"
+  }
+}
