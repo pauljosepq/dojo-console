@@ -3,9 +3,11 @@ const {Range} = require("range-dojo")
 
 let arr = prompt("Insert the desired range with the following structure (/[x, y]/):  ")
 const r = new Range(arr)
+do {
+    
 
 console.log("Options:")
-console.log("1. Contains Integer\n2. Contains Range\n3. Get All Points\n4. Equals\n5. Get Endpoints ")
+console.log("1. Contains Integer\n2. Contains Range\n3. Get All Points\n4. Equals\n5. Get Endpoints\n6. Exit ")
 let opt = prompt("Which action would you like to do: ");
 
 switch (opt) {
@@ -41,7 +43,12 @@ switch (opt) {
     case '5':
         console.log(r.getEndPoints())
         break;
+    case '6':
+        break;
+        
     default:
         console.log("The specified option is not defined")
         break;
 }
+
+} while (opt === "6")
